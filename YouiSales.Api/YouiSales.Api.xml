@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>YouiSales.Api</name>
+    </assembly>
+    <members>
+        <member name="T:YouiSales.Api.Controllers.OrderController">
+            <summary>
+            Order Controller.
+            </summary>
+        </member>
+        <member name="M:YouiSales.Api.Controllers.OrderController.#ctor(Microsoft.Extensions.Logging.ILogger{YouiSales.Api.Controllers.OrderController},YouiSales.Api.Services.Interfaces.IOrderService)">
+            <summary>
+            Order Controller Constructor
+            </summary>
+            <param name="logger">Logger</param>
+            <param name="orderService">Order Service</param>
+        </member>
+        <member name="M:YouiSales.Api.Controllers.OrderController.AddLineAsync(System.Object)">
+            <summary>
+            Add line
+            </summary>
+            <param name="line">Content on the line object</param>
+            <returns>Return success true/false</returns>
+        </member>
+        <member name="M:YouiSales.Api.Controllers.OrderController.ReceiptAsync(System.String)">
+            <summary>
+            Receipt for the order.
+            </summary>
+            <returns>Return result with Receipt</returns>
+        </member>
+        <member name="M:YouiSales.Api.Controllers.OrderController.HtmlReceiptAsync(System.String)">
+            <summary>
+            HTML Receipt for the order.
+            </summary>
+            <returns>Return string with HTML Receipt</returns>
+        </member>
+        <member name="T:YouiSales.Api.Models.Base.BaseResponse">
+            <summary>
+            Base Response Class.
+            </summary>
+        </member>
+        <member name="P:YouiSales.Api.Models.Base.BaseResponse.Success">
+            <summary>
+            Success.
+            </summary>
+        </member>
+        <member name="P:YouiSales.Api.Models.Base.BaseResponse.ErrorMessage">
+            <summary>
+            Error message if any.
+            </summary>
+        </member>
+        <member name="T:YouiSales.Api.Models.OrderResponse">
+            <summary>
+            Order Response.
+            </summary>
+        </member>
+        <member name="P:YouiSales.Api.Models.OrderResponse.Result">
+            <summary>
+            Result.
+            </summary>
+        </member>
+        <member name="T:YouiSales.Api.Services.Interfaces.IOrderService">
+            <summary>
+            Interface for Order Service.
+            </summary>
+        </member>
+        <member name="M:YouiSales.Api.Services.Interfaces.IOrderService.AddLine(System.Object)">
+            <summary>
+            Add line
+            </summary>
+            <param name="line">Content on the line object</param>
+            <returns>Return success true/false</returns>
+        </member>
+        <member name="M:YouiSales.Api.Services.Interfaces.IOrderService.Receipt(System.String)">
+            <summary>
+            Receipt for the order.
+            </summary>
+            <param name="company">Company provided</param>
+            <returns>Return result with Receipt</returns>
+        </member>
+        <member name="M:YouiSales.Api.Services.Interfaces.IOrderService.HtmlReceipt(System.String)">
+            <summary>
+            HTML Receipt for the order.
+            </summary>
+            <param name="company">Company provided</param>
+            <returns>Return result with HTML Receipt</returns>
+        </member>
+        <member name="T:YouiSales.Api.Services.OrderService">
+            <summary>
+            Order Service.
+            </summary>
+        </member>
+        <member name="M:YouiSales.Api.Services.OrderService.#ctor(Microsoft.Extensions.Logging.ILogger{YouiSales.Api.Services.OrderService},Microsoft.Extensions.Caching.Memory.IMemoryCache)">
+            <summary>
+            Order Service Constructor.
+            </summary>
+            <param name="logger">Logger</param>
+            <param name="memoryCache">Memory Cache</param>
+        </member>
+        <member name="M:YouiSales.Api.Services.OrderService.CacheLine(System.Collections.Generic.IList{YouiSales.Common.Models.Line})">
+            <summary>
+            Test propose only
+            </summary>
+            <param name="lineModel">Content on line</param>
+            <returns></returns>
+        </member>
+        <member name="M:YouiSales.Api.Services.OrderService.AddLine(System.Object)">
+            <summary>
+            Add line
+            </summary>
+            <param name="line">Content on the line object</param>
+        </member>
+        <member name="M:YouiSales.Api.Services.OrderService.Receipt(System.String)">
+            <summary>
+            Receipt for the order.
+            </summary>
+            <returns>Return result with Receipt</returns>
+        </member>
+        <member name="M:YouiSales.Api.Services.OrderService.HtmlReceipt(System.String)">
+            <summary>
+            HTML Receipt for the order.
+            </summary>
+            <returns>Return result with HTML Receipt</returns>
+        </member>
+    </members>
+</doc>
