@@ -94,6 +94,7 @@ namespace YouiSales.Api
             // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.), specifying the Swagger JSON endpoint.
             app.UseSwaggerUI(q =>
             {
+                q.RoutePrefix = "";
                 q.SwaggerEndpoint("/swagger/v1/swagger.json", "Youi API v1");
             });
         }
